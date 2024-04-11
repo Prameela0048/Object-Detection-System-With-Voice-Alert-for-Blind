@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Object Detection System With Voice Alert for Blind</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: rgba(0, 0, 255, 0.3); /* Blue background with low opacity */
+    background: linear-gradient(135deg, rgba(0, 0, 255, 0.3), rgba(0, 0, 255, 0.3)); /* Gradient background with blue and low opacity */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Set the body height to full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 600px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    width: 200px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: #007bff; /* Blue background color */
+    color: white; /* White text color */
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 60px;
+    margin: 0 10px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Added this rule to set the text color for the button */
+.button a {
+    color: white;
+    text-decoration: none; /* Remove underline from the anchor tag */
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+    <h1 class="title">Object Detection System With Voice Alert for Blind</h1>
+    <div class="button-container">
+        <button class="button"><a href="{{ url_for('start_execution') }}" target="Self">Start Execution</a></button>
+        <button class="button"><a href="{{ url_for('stop_execution') }}">Stop Execution</a></button>
+    </div>
+</div>
+</body>
+</html>
